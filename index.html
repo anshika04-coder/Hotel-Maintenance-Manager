@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Rahul Mehta Interactive Persona</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- PERSONA HEADER -->
+
+<div class="persona-header">
+
+<img src="https://i.imgur.com/7k12EPD.png" class="avatar">
+
+<div>
+<h1>Rahul Mehta</h1>
+<p>Hotel Operations & Maintenance Manager</p>
+<p>📍 Dehradun | 🏨 120 Room Hotel</p>
+</div>
+
+</div>
+
+<!-- PERSONA STATS -->
+
+<div class="stats">
+
+<h3>Persona Stats</h3>
+
+<div class="stat">
+<p>Technical Comfort</p>
+<div class="progress"><div style="width:75%"></div></div>
+</div>
+
+<div class="stat">
+<p>Decision Authority</p>
+<div class="progress"><div style="width:85%"></div></div>
+</div>
+
+<div class="stat">
+<p>Monitoring Frequency</p>
+<div class="progress"><div style="width:90%"></div></div>
+</div>
+
+</div>
+
+<!-- PAIN POINT CHART -->
+
+<div class="painpoints">
+
+<h3>Pain Point Severity</h3>
+
+<div class="bar">
+<span>Hidden Pipeline Leaks</span>
+<div class="level" style="width:90%"></div>
+</div>
+
+<div class="bar">
+<span>Manual Inspections</span>
+<div class="level" style="width:80%"></div>
+</div>
+
+<div class="bar">
+<span>Late Detection</span>
+<div class="level" style="width:95%"></div>
+</div>
+
+</div>
+
+<!-- EXPANDABLE CARDS -->
+
+<div class="accordion">
+
+<button class="acc-btn">Goals</button>
+<div class="acc-content">
+<p>Ensure uninterrupted water supply, detect leaks early, reduce maintenance cost.</p>
+</div>
+
+<button class="acc-btn">Pain Points</button>
+<div class="acc-content">
+<p>Hidden leaks, manual inspections, delayed alerts, high water bills.</p>
+</div>
+
+<button class="acc-btn">Technology</button>
+<div class="acc-content">
+<p>Uses dashboards, mobile alerts, and infrastructure monitoring tools.</p>
+</div>
+
+</div>
+
+<!-- CHATBOT -->
+
+<h3>Ask Rahul</h3>
+
+<div class="chatbox" id="chatbox"></div>
+
+<div class="suggestions">
+
+<button onclick="ask('How do you detect leaks?')">Leak Detection</button>
+<button onclick="ask('What plumbing problems happen in hotels?')">Problems</button>
+<button onclick="ask('Would AI help your job?')">AI Automation</button>
+
+</div>
+
+<div class="input-area">
+
+<input type="text" id="userInput" placeholder="Ask Rahul something...">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
